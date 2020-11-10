@@ -16,14 +16,15 @@
 
             <table border="1">
                 <tr>
-                    <!-- <th>Name</th> -->
+
+                    <th>Name</th>
                     <th>Mobile No</th>
                     <th>Status</th>
 
                 </tr>
                 {% for i in mob %}
                 <tr>
-                    <!-- <td>Ramesh Raman</td> -->
+                    <td>{{name|index:forloop.counter0}} </td>
                     <td>{{mob|index:forloop.counter0}} </td>
                     <td>{{status|index:forloop.counter0}}</td>
 

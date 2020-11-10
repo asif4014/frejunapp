@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static 'FrejunApp/style.css' %}">
+</head>
+
+<body>
+
+    <div class="bg">
+        <div class="container">
+            <form action="{% url 'model'%}" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input type="hidden" name="filen" value="{{filename}}">
+                <button type="submit" class="button" id="uload">Check Status </button>
+            </form>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -31,6 +31,10 @@ ALLOWED_HOSTS = ['frejunapp.herokuapp.com', 'localhost']
 
 # Application definition
 
+GOOGLE_CLIENT_SECRET_FILE = os.path.join(BASE_DIR, 'credentials.json')
+GOOGLE_AUTH_SCOPES = ['https://www.googleapis.com/auth/drive',
+                      ]
+
 INSTALLED_APPS = [
     'FrejunApp.apps.FrejunappConfig',
     # FrejunApp is app name,apps is file name and later is class name
@@ -40,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_google.apps.DjangoGoogleConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
