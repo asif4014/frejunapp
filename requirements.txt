@@ -28,7 +28,7 @@ httplib2==0.18.1
 httplib2shim==0.0.3
 idna==2.10
 ipykernel==5.3.4
-ipython==7.19.0
+# ipython==7.19.0
 ipython-genutils==0.2.0
 jedi==0.17.2
 jupyter-client==6.1.7
